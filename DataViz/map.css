@@ -1,21 +1,28 @@
 body {
     position: absolute;
-    font-family: "Times New Roman";
+    font-family: "nyt-franklin";
+    background-color: #DCEAF4;
 }
 h1, h2 {
     position: absolute;
     left: 10px;
     font-size: 1.3em;
     font-weight: 100;
+    top: 40px;
 }
 h2 {
-    top: 30px;
+    top: 60px;
     font-size: 1em;
+}
+img {
+    width : 15%;
+    height : 15%;
+    float:left;
 }
 .incident {
     fill: "grey";
 }
 .hover {
-    fill: yellow;
+    stroke : #1E596C;
     stroke-width: 2px;
 }
