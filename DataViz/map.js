@@ -38,15 +38,16 @@ let color = d3.scaleThreshold()
         })
         //.attr("stroke", "#333")
         .attr("stroke", "rbg(0,0,0)")
+        .attr("stroke-width", 2)
         .attr("d", path)
         .on("mouseover", function(d){
         	d3.select("h2").text(function() {
                 if (murder_data[d.properties.Precinct] == 1) {
-                    return `There was ${murder_data[d.properties.Precinct]} murder
-                    in New York's ${d.properties.Precinct} Precinct in 2017`;
+                    return `There was one murder
+                    in New York's ${d.properties.Precinct}th Precinct in 2017`;
                 } else {
                     return `There were ${murder_data[d.properties.Precinct]} murders
-                    in New York's ${d.properties.Precinct} Precinct in 2017`;
+                    in New York's ${d.properties.Precinct}th Precinct in 2017`;
                 }
             });
         	d3.select(this).attr("class","hover");
